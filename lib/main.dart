@@ -28,6 +28,32 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      appBar: AppBar(
+        title: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                "My Gallery",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20.0,
+                    color: Colors.black
+
+                ),
+              ),
+              Text(
+                "Welcome To Girdview",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    color: Colors.black38
+                ),
+              )
+            ]
+        ),
+      ),
      body: Container(
       decoration: BoxDecoration(
         color: Colors.white
@@ -202,39 +228,7 @@ class MyHomePage extends StatelessWidget {
                 ),
               )
           ),
-          TextButton(
-              onPressed: (){},
-              child: Text("Click",
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
 
-                ),
-              )
-          ),
-          TextButton(
-              onPressed: (){},
-              child: Text("Click",
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-
-                ),
-              )
-          ),
-          TextButton(
-              onPressed: (){},
-              child: Text("Click",
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-
-                ),
-              )
-          ),
         ],
       )
     ),
